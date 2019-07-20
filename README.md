@@ -1,6 +1,6 @@
 # NodeJS and Puppeteer Instagram auto like and auto comment bot.
 
-The app works forever.For each hour, the bot opens a new instagram hashtag which is available the list of hashtags in an array.
+The app works forever. For each hour, the bot opens a new instagram hashtag which is available the list of hashtags in an array.
 
 Then it likes 25 most recent posts of the hashtag and add 7 comments after the 25 likes. After that the app waits for one hour then it will do the same thing again forever.
 
