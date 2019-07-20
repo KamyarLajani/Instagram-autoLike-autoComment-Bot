@@ -1,6 +1,4 @@
-# Instagram-autoLike-autoComment-Bot
-NodeJS and Puppeteer Instagram auto like and auto comment bot.
-This bot created with Puppeteer module.
+# NodeJS and Puppeteer Instagram auto like and auto comment bot.
 
 The app works forever.For each hour, the bot opens a new instagram hashtag which is available the list of hashtags in an array.
 
