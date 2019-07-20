@@ -3,21 +3,9 @@ const app = express();
 const puppeteer = require('puppeteer');
 
 
-app.get('/', (req, res)=>{
-    res.send('Instagram Bot');
-});
-
- // waking up heroku server
-var http = require("http");
-    setInterval(function() {
-    http.get("https://kamyar.herokuapp.com");
-}, 3000000); // every 50 minutes
-
-
-
 (async ()=> {
    
-    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+    
     let page  = await browser.newPage();
     // automatic login
     await page.goto('https://instagram.com/accounts/login');
@@ -26,10 +14,10 @@ var http = require("http");
     await page.waitForSelector('button[type="submit"]')
     await page.click('input[name="username"]');
                                             // username
-    await page.type('input[name="username"]','router.js');
+    await page.type('input[name="username"]','YourUsername');
     await page.click('input[name="password"]');
                                             // password
-    await page.type('input[name="password"]','bestprogrammer123');
+    await page.type('input[name="password"]','YourPassword');
     await page.click('button[type="submit"]');
     await page.waitFor(7000);
 
